@@ -1,0 +1,69 @@
+{
+  "title": "Halloween Night · Boyd House",
+  "version": 1,
+  "date": "2026-10-31",
+  "dateLabel": "Friday, October 31, 2026",
+  "place": "Millersville, MD",
+  "home": "[home address]",
+  "coords": { "lat": 39.0596, "lon": -76.6477 },
+  "sunset": {
+    "source": "sunrise-sunset.org",
+    "utc": "2026-10-31T22:08:31+00:00",
+    "localET": "6:08 PM ET",
+    "exampleFallback": "6:05 PM ET",
+    "note": "Approximate sunset for lat 39.0596 / lon -76.6477 via sunrise-sunset.org (UTC→ET)."
+  },
+  "costumes": {
+    "char": {
+      "name": "Charlotte (Char)",
+      "ageNote": "teen · U14 Aspire",
+      "emoji": "🎃",
+      "items": [
+        { "id": "c1", "label": "Costume pieces laid out", "done": false },
+        { "id": "c2", "label": "Comfortable walking shoes", "done": false },
+        { "id": "c3", "label": "Phone charged + flashlight app", "done": false },
+        { "id": "c4", "label": "Light jacket / hoodie layer", "done": false },
+        { "id": "c5", "label": "Candy bag / bucket", "done": false },
+        { "id": "c6", "label": "Reflective clip or glow stick", "done": false }
+      ]
+    },
+    "vic": {
+      "name": "Victor (Vic)",
+      "ageNote": "elementary · Hornets / API",
+      "emoji": "👻",
+      "items": [
+        { "id": "v1", "label": "Costume on + fit check", "done": false },
+        { "id": "v2", "label": "Sneakers (not dress shoes)", "done": false },
+        { "id": "v3", "label": "Glow stick / reflective tape", "done": false },
+        { "id": "v4", "label": "Candy bucket ready", "done": false },
+        { "id": "v5", "label": "Water bottle in bag", "done": false },
+        { "id": "v6", "label": "Buddy plan with Char / parent", "done": false }
+      ]
+    }
+  },
+  "candy": [
+    { "id": "candy1", "name": "Mini chocolate bars", "inStock": 48, "given": 0, "emoji": "🍫" },
+    { "id": "candy2", "name": "Gummy packs", "inStock": 36, "given": 0, "emoji": "🐻" },
+    { "id": "candy3", "name": "Hard candy mix", "inStock": 60, "given": 0, "emoji": "🍬" },
+    { "id": "candy4", "name": "Allergy-friendly (non-food) treats", "inStock": 24, "given": 0, "emoji": "⭐" },
+    { "id": "candy5", "name": "Lollipops", "inStock": 40, "given": 0, "emoji": "🍭" }
+  ],
+  "route": {
+    "label": "EXAMPLE trick-or-treat loop near Springbloom",
+    "disclaimer": "EXAMPLE only — not surveyed GPS tracks. Boyd family plan sketch for Millersville streets near home. Confirm sidewalks, porch lights, and stay on familiar blocks.",
+    "stops": [
+      { "id": "r1", "name": "Springbloom loop start (home)", "note": "Porch light on · candy bowl ready", "example": true },
+      { "id": "r2", "name": "Neighbor houses · Springbloom block", "note": "EXAMPLE — stay on lit sidewalks", "example": true },
+      { "id": "r3", "name": "Adjacent cul-de-sac (EXAMPLE)", "note": "Short loop · check porch lights", "example": true },
+      { "id": "r4", "name": "Crosswalk to next street (EXAMPLE)", "note": "Adult crossing · no mid-block dash", "example": true },
+      { "id": "r5", "name": "Friendly porch cluster (EXAMPLE)", "note": "Known neighbors · quick wave", "example": true },
+      { "id": "r6", "name": "Return home · candy sort", "note": "Water · shoe dump · allergy check", "example": true }
+    ]
+  },
+  "tips": [
+    "Porch light on = open for trick-or-treat",
+    "Inspect candy at home before eating",
+    "Reflective gear beats dark costumes on streets",
+    "Set a return time before leaving the block"
+  ]
+}

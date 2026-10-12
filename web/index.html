@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Halloween Night · Boyd House</title>
+<meta name="theme-color" content="#2a1636">
+<meta name="description" content="Halloween night planner for the Boyd house — sunset countdown Millersville, costumes for Char & Vic, candy inventory, EXAMPLE street route.">
+<style>/*__CSS__*/</style>
+</head>
+<body>
+<div class="bg" aria-hidden="true"></div>
+
+<header class="top no-print">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 48 48" width="44" height="44">
+        <defs>
+          <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#fb923c"/>
+            <stop offset="1" stop-color="#a78bfa"/>
+          </linearGradient>
+        </defs>
+        <circle cx="24" cy="24" r="18" fill="#2a1636" stroke="url(#hg)" stroke-width="2.5"/>
+        <path d="M24 10c-2 4-3 7-3 10 0 4 2 7 3 8 1-1 3-4 3-8 0-3-1-6-3-10z" fill="#fb923c"/>
+        <circle cx="18" cy="22" r="2.2" fill="#fde68a"/>
+        <circle cx="30" cy="22" r="2.2" fill="#fde68a"/>
+        <path d="M18 30c2 2 4 3 6 3s4-1 6-3" stroke="#fde68a" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Halloween Night</h1>
+      <p class="tag">Boyd house · Millersville MD · Char &amp; Vic</p>
+    </div>
+  </div>
+  <div class="top-actions">
+    <span class="pill soft" id="datePill">Fri Oct 31 2026</span>
+    <span class="pill glow" id="sunsetPill">Sunset …</span>
+    <button type="button" class="btn ghost sm" id="btnPrint" title="Print">🖨 Print</button>
+  </div>
+</header>
+
+<nav class="tabs no-print" role="tablist" aria-label="Halloween screens">
+  <button class="tab active" data-view="tonight" role="tab" aria-selected="true">🌙 Tonight</button>
+  <button class="tab" data-view="costumes" role="tab" aria-selected="false">👗 Costumes</button>
+  <button class="tab" data-view="candy" role="tab" aria-selected="false">🍬 Candy</button>
+  <button class="tab" data-view="route" role="tab" aria-selected="false">🗺️ Route</button>
+  <button class="tab" data-view="about" role="tab" aria-selected="false">About</button>
+</nav>
+
+<main>
+  <section id="view-tonight" class="view active" role="tabpanel">
+    <div class="hero panel pumpkin">
+      <div class="panel-head">
+        <div>
+          <p class="eyebrow">Friday · October 31, 2026</p>
+          <h2 class="view-title">Millersville · porch lights · family night</h2>
+          <p class="lede">Warm Halloween planner for Springbloom — sunset countdown, costume checklists, candy tally, and an <strong>EXAMPLE</strong> trick-or-treat loop (not surveyed GPS).</p>
+        </div>
+        <div class="countdown-card" id="countdownCard">
+          <p class="cd-label">Until sunset</p>
+          <p class="cd-value" id="countdownValue">—</p>
+          <p class="cd-sub" id="countdownSub">Loading…</p>
+        </div>
+      </div>
+      <div class="stat-row" id="statRow"></div>
+      <ul class="tips" id="tipsList"></ul>
+    </div>
+  </section>
+
+  <section id="view-costumes" class="view" role="tabpanel">
+    <div class="panel">
+      <h2 class="view-title">Costume checklists</h2>
+      <p class="lede">EXAMPLE items for Char (teen) and Vic (elementary). Checks save in localStorage on this device. Print-friendly.</p>
+      <div class="costume-grid" id="costumeRoot"></div>
+      <div class="row-actions no-print">
+        <button type="button" class="btn ghost" id="btnResetCostumes">Reset checklist checks</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="view-candy" class="view" role="tabpanel">
+    <div class="panel">
+      <h2 class="view-title">Candy inventory</h2>
+      <p class="lede">Track stock and hand-outs. Counts persist in localStorage. EXAMPLE starting numbers — edit to match your bowls.</p>
+      <div id="candyRoot" class="candy-list"></div>
+      <div class="row-actions no-print">
+        <button type="button" class="btn ghost" id="btnResetCandy">Reset candy counts</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="view-route" class="view" role="tabpanel">
+    <div class="panel">
+      <div class="badge-ex">EXAMPLE route — not surveyed</div>
+      <h2 class="view-title" id="routeTitle">Trick-or-treat loop</h2>
+      <p class="lede" id="routeDisclaimer"></p>
+      <ol class="route-list" id="routeRoot"></ol>
+    </div>
+  </section>
+
+  <section id="view-about" class="view" role="tabpanel">
+    <div class="panel">
+      <h2 class="view-title">About · Print sheet</h2>
+      <p class="lede">TokenMax burn build for Boyd — family-friendly Halloween desk tool. Sunset from sunrise-sunset.org when available; otherwise a labeled EXAMPLE time.</p>
+      <div class="print-sheet" id="printSheet">
+        <h3>Boyd Halloween sheet · Oct 31 2026</h3>
+        <div id="printBody"></div>
+      </div>
+      <div class="row-actions no-print">
+        <button type="button" class="btn primary" id="btnDoPrint">Print costume / candy sheet</button>
+        <button type="button" class="btn ghost" id="btnExport">Export JSON</button>
+      </div>
+      <p class="hint">Offline single-file: dist/halloween-night.html · Port 4321</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot no-print">
+  <span>🎃 Halloween Night · Millersville</span>
+  <span id="footSunset"></span>
+</footer>
+
+<script>
+window.__HALLOWEEN__ = /*__HALLOWEEN__*/ null /*__/HALLOWEEN__*/;
+/*__APP__*/
+</script>
+</body>
+</html>
