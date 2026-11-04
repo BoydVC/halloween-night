@@ -15,7 +15,7 @@
   },
   "costumes": {
     "char": {
-      "name": "Charlotte (Char)",
+      "name": "Alex (Alex)",
       "ageNote": "teen · U14 Aspire",
       "emoji": "🎃",
       "items": [
@@ -28,7 +28,7 @@
       ]
     },
     "vic": {
-      "name": "Victor (Vic)",
+      "name": "Samuel (Sam)",
       "ageNote": "elementary · Hornets / API",
       "emoji": "👻",
       "items": [
@@ -37,7 +37,7 @@
         { "id": "v3", "label": "Glow stick / reflective tape", "done": false },
         { "id": "v4", "label": "Candy bucket ready", "done": false },
         { "id": "v5", "label": "Water bottle in bag", "done": false },
-        { "id": "v6", "label": "Buddy plan with Char / parent", "done": false }
+        { "id": "v6", "label": "Buddy plan with Alex / parent", "done": false }
       ]
     }
   },
