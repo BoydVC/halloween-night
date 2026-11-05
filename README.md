@@ -1,6 +1,6 @@
 # Halloween Night
 
-Warm Halloween night planner for the **Boyd house** in Millersville — sunset countdown (sunrise-sunset.org for Springbloom coords), costume checklists for Char & Vic, candy inventory, and a labeled **EXAMPLE** trick-or-treat street route (not surveyed GPS). Family-friendly orange/purple theme. TokenMax burn build.
+Warm Halloween night planner for the **Boyd house** in Millersville — sunset countdown (sunrise-sunset.org for Springbloom coords), costume checklists for Alex & Sam, candy inventory, and a labeled **EXAMPLE** trick-or-treat street route (not surveyed GPS). Family-friendly orange/purple theme. TokenMax burn build.
 
 ## Screens
 
