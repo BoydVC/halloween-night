@@ -176,8 +176,8 @@
     const given = candy.reduce((s, c) => s + (c.given || 0), 0);
     root.innerHTML = [
       { b: sunsetLocal, s: "Sunset (" + (sunsetSource.indexOf("EXAMPLE") >= 0 ? "EXAMPLE" : "approx") + ")" },
-      { b: ch.done + "/" + ch.total, s: "Alex checklist" },
-      { b: vi.done + "/" + vi.total, s: "Sam checklist" },
+      { b: ch.done + "/" + ch.total, s: "Ri checklist" },
+      { b: vi.done + "/" + vi.total, s: "Jo checklist" },
       { b: String(left), s: "Candy left · " + given + " given" }
     ].map((x) => `<div class="stat"><b>${x.b}</b><span>${x.s}</span></div>`).join("");
   }
@@ -291,8 +291,8 @@
       `<li>${escapeHtml(x.emoji)} ${escapeHtml(x.name)} — left ${Math.max(0, x.inStock - x.given)} (in ${x.inStock} / out ${x.given})</li>`
     ).join("");
     body.innerHTML = `
-      <div class="print-col"><h4>Alex</h4><ul>${list("char")}</ul></div>
-      <div class="print-col"><h4>Sam</h4><ul>${list("vic")}</ul></div>
+      <div class="print-col"><h4>Ri</h4><ul>${list("char")}</ul></div>
+      <div class="print-col"><h4>Jo</h4><ul>${list("vic")}</ul></div>
       <div class="print-col"><h4>Candy</h4><ul>${candyLines}</ul></div>
       <p class="hint">Sunset ${escapeHtml(sunsetLocal)} · ${escapeHtml(sunsetSource)}</p>`;
   }
