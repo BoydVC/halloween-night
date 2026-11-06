@@ -1,9 +1,9 @@
 {
-  "title": "Halloween Night · Boyd House",
+  "title": "Halloween Night · Rivera House",
   "version": 1,
   "date": "2026-10-31",
   "dateLabel": "Friday, October 31, 2026",
-  "place": "Millersville, MD",
+  "place": "Lakeside, MD",
   "home": "[home address]",
   "coords": { "lat": 39.0596, "lon": -76.6477 },
   "sunset": {
@@ -15,7 +15,7 @@
   },
   "costumes": {
     "char": {
-      "name": "Alex (Alex)",
+      "name": "Riley (Ri)",
       "ageNote": "teen · U14 Aspire",
       "emoji": "🎃",
       "items": [
@@ -28,7 +28,7 @@
       ]
     },
     "vic": {
-      "name": "Samuel (Sam)",
+      "name": "Jordan (Jo)",
       "ageNote": "elementary · Hornets / API",
       "emoji": "👻",
       "items": [
@@ -37,7 +37,7 @@
         { "id": "v3", "label": "Glow stick / reflective tape", "done": false },
         { "id": "v4", "label": "Candy bucket ready", "done": false },
         { "id": "v5", "label": "Water bottle in bag", "done": false },
-        { "id": "v6", "label": "Buddy plan with Alex / parent", "done": false }
+        { "id": "v6", "label": "Buddy plan with Ri / parent", "done": false }
       ]
     }
   },
@@ -49,11 +49,11 @@
     { "id": "candy5", "name": "Lollipops", "inStock": 40, "given": 0, "emoji": "🍭" }
   ],
   "route": {
-    "label": "EXAMPLE trick-or-treat loop near Springbloom",
-    "disclaimer": "EXAMPLE only — not surveyed GPS tracks. Boyd family plan sketch for Millersville streets near home. Confirm sidewalks, porch lights, and stay on familiar blocks.",
+    "label": "EXAMPLE trick-or-treat loop near Oak Street",
+    "disclaimer": "EXAMPLE only — not surveyed GPS tracks. Rivera family plan sketch for Lakeside streets near home. Confirm sidewalks, porch lights, and stay on familiar blocks.",
     "stops": [
-      { "id": "r1", "name": "Springbloom loop start (home)", "note": "Porch light on · candy bowl ready", "example": true },
-      { "id": "r2", "name": "Neighbor houses · Springbloom block", "note": "EXAMPLE — stay on lit sidewalks", "example": true },
+      { "id": "r1", "name": "Oak Street loop start (home)", "note": "Porch light on · candy bowl ready", "example": true },
+      { "id": "r2", "name": "Neighbor houses · Oak Street block", "note": "EXAMPLE — stay on lit sidewalks", "example": true },
       { "id": "r3", "name": "Adjacent cul-de-sac (EXAMPLE)", "note": "Short loop · check porch lights", "example": true },
       { "id": "r4", "name": "Crosswalk to next street (EXAMPLE)", "note": "Adult crossing · no mid-block dash", "example": true },
       { "id": "r5", "name": "Friendly porch cluster (EXAMPLE)", "note": "Known neighbors · quick wave", "example": true },
